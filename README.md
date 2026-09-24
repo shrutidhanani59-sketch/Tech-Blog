@@ -72,5 +72,5 @@ vite.config.js
 
 ## Imges
 
-![Tech Blog](./screenshort1.png)
-![Tech Blog](./screenshort2.png)
+![Tech Blog](screenshort1.png)
+![Tech Blog](screenshort2.png)
