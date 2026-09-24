@@ -1,17 +1,76 @@
-# React + Vite
+# 📝 Tech Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Tech Blog Website** built using React, Bootstrap, and JSON Server.
 
-Currently, two official plugins are available:
+Users can view tech blogs, add new blogs, and delete existing blogs using a REST API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📚 Display Tech Blogs
 
-## Expanding the ESLint configuration
+- ➕ Add New Blog
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Tech-Blog" 
+- 🗑️ Delete Blog
+
+- 🖼️ Add Blog Image URL
+
+- 👤 Add Author Name
+
+- 📝 Add Blog Description
+
+- 📅 Add Blog Date
+
+- 📱 Responsive Bootstrap Grid
+
+- 💾 JSON Server REST API
+
+- ⚛️ React Functional Components
+
+- 🎨 Bootstrap UI Design
+
+
+## 🛠️ Technologies Used
+
+React.js
+
+JavaScript
+
+Bootstrap 5
+
+JSON Server
+
+HTML
+
+CSS
+
+Vite
+
+## 📂 Project  Structure
+
+Tech-Blog/
+
+public
+
+src
+
+App.jsx
+
+App.css
+
+main.jsx
+
+db.json
+
+index.html
+
+package-lock.json
+
+package.json
+
+vite.config.js
+
+## Imges
+
+![Tech Blog](./screenshort1.png)
+![Tech Blog](./screenshort2.png)
