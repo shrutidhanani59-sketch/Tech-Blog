@@ -1,0 +1,45 @@
+{
+  "blog": [
+    {
+      "title": "The Future of Artificial Intelligence",
+      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+      "author": "Rahul Sharma",
+      "description": "Artificial Intelligence is changing the way we work, learn, and solve real-world problems.",
+      "date": "24 September 2026",
+      "id": "MK_uXUhSooA"
+    },
+    {
+      "title": "Introduction to Web Development",
+      "img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "author": "Priya Patel",
+      "description": "Learn the basics of HTML, CSS, and JavaScript to start your journey as a web developer.",
+      "date": "22 September 2026",
+      "id": "RzwVKr76q80"
+    },
+    {
+      "title": "Why JavaScript is Important",
+      "img": "https://images.unsplash.com/photo-1627398242454-45a1465c2479",
+      "author": "Amit Kumar",
+      "description": "JavaScript makes websites interactive and is one of the most popular programming languages.",
+      "date": "20 September 2026",
+      "id": "hJb61YfXdvY"
+    },
+    {
+      "title": "Getting Started with React",
+      "img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+      "author": "Neha Joshi",
+      "description": "React is a popular JavaScript library used to build modern and interactive user interfaces.",
+      "date": "18 September 2026",
+      "id": "88-71eTGJiI"
+    },
+    {
+      "title": "The Rise of Cloud Computing",
+      "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+      "author": "Vivek Mehta",
+      "description": "Cloud computing allows businesses and developers to store data and run applications over the internet.",
+      "date": "15 September 2026",
+      "id": "x9GScy9E2_c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
