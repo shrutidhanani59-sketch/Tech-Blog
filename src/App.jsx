@@ -10,6 +10,7 @@ function App() {
   const [author, setAuthor] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
+  const [id, setid] = useState(null);
 
   const API = "http://localhost:3000/blog";
 
@@ -23,18 +24,30 @@ function App() {
   })
 
   const handleclick = (e) => {
-    
+
     const add = { title, img, author, description, date };
-   fetch(API, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(add)
-});
+
+    if (!id) {
+      fetch(API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(add)
+      });
+    }else{
+       fetch(`${API}/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(add)
+      });
+    }
+
   }
 
-  const deletbtn = (id)=>{
+  const deletbtn = (id) => {
     fetch(`${API}/${id}`, {
       method: "DELETE",
       headers: { "content-type": "application/json" }
@@ -42,6 +55,14 @@ function App() {
 
   }
 
+  const updatebtn = (edit) => {
+    setTitle(edit.title);
+    setImg(edit.img);
+    setAuthor(edit.author);
+    setDescription(edit.description);
+    setDate(edit.data);
+    setid(edit.id);
+  }
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center min-vh-100">
@@ -52,30 +73,30 @@ function App() {
 
           <div className="mb-3">
             <label className="form-label fw-semibold">  Title </label>
-            <input type="text" className="form-control" placeholder="Enter Title" onChange={(e) => { setTitle(e.target.value) }} />
+            <input type="text" value={title} className="form-control" placeholder="Enter Title" onChange={(e) => { setTitle(e.target.value) }} />
           </div>
 
           <div className="mb-3">
             <label className="form-label fw-semibold">  Img </label>
-            <input type="text" className="form-control" placeholder="Enter Img URL" onChange={(e) => { setImg(e.target.value) }} />
+            <input type="text" value={img} className="form-control" placeholder="Enter Img URL" onChange={(e) => { setImg(e.target.value) }} />
           </div>
 
           <div className="mb-3">
             <label className="form-label fw-semibold">  Author </label>
-            <input type="text" className="form-control" placeholder="Enter Author Name" onChange={(e) => { setAuthor(e.target.value) }} />
+            <input type="text" value={author} className="form-control" placeholder="Enter Author Name" onChange={(e) => { setAuthor(e.target.value) }} />
           </div>
 
           <div className="mb-3">
             <label className="form-label fw-semibold"> Description</label>
-            <textarea className="form-control" placeholder="Enter Description" rows="3" onChange={(e) => { setDescription(e.target.value) }}></textarea>
+            <textarea value={description} className="form-control" placeholder="Enter Description" rows="3" onChange={(e) => { setDescription(e.target.value) }}></textarea>
           </div>
 
           <div className="mb-4">
             <label className="form-label fw-semibold">  Date </label>
-            <input type="date" className="form-control" onChange={(e) => { setDate(e.target.value) }} />
+            <input type="date" value={date} className="form-control" onChange={(e) => { setDate(e.target.value) }} />
           </div>
 
-          <button className="btn btn-primary w-100" onClick={handleclick}>  Add Blog </button>
+          <button className="btn btn-primary w-100" onClick={handleclick}> {(!id) ? "Add Blog" : "Edit Blog"} </button>
 
         </form>
 
@@ -84,7 +105,7 @@ function App() {
 
       <div className="container py-5 ">
 
-        <h1 className="text-center fw-bold mb-5">
+        <h1 className="text-center fw-bold mb-5 text-white">
           Tech Blogs
         </h1>
 
@@ -120,7 +141,7 @@ function App() {
                         Delete
                       </button>
 
-                      <button className="btn btn-warning">
+                      <button className="btn btn-warning" onClick={() =>updatebtn(blog)}>
                         Update
                       </button>
 
