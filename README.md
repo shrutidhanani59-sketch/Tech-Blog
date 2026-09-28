@@ -34,15 +34,11 @@ Users can view tech blogs, add new blogs, and delete existing blogs using a REST
 
 React.js
 
-JavaScript
-
 Bootstrap 5
 
 JSON Server
 
 HTML
-
-CSS
 
 Vite
 
