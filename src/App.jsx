@@ -69,7 +69,7 @@ function App() {
 
         <form className="card shadow p-4 rounded-4" style={{ width: "450px" }}>
 
-          <h2 className="text-center fw-bold mb-4"> Add Tech Blog </h2>
+          <h2 className="text-center fw-bold mb-4"> {(!id) ? "Add Tech Blog" : "Update Tech Blog"}   </h2>
 
           <div className="mb-3">
             <label className="form-label fw-semibold">  Title </label>
@@ -112,11 +112,11 @@ function App() {
         <div className="row g-4">
           {blog.map((blog) => {
             return (
-              <div className="col-md-4 " key={blog.id}>
+              <div className="col-md-4 cards" key={blog.id}>
 
                 <div className="card h-100 shadow border-0 rounded-4 overflow-hidden" >
                   <h2 className="card-title fs-4 fw-bold p-4 pb-2 mb-0">
-                    {blog.title}
+                   Title :  {blog.title}
                   </h2>
                   <img
                     src={blog.img}
@@ -127,13 +127,13 @@ function App() {
                   <div className="card-body p-4">
 
                     <h3 className="fs-6 text-black">
-                      {blog.author}
+                    <span>Author :</span>  {blog.author}
                     </h3>
                     <p className="card-text ">
-                      {blog.description}
+                    <span>Description :</span>  {blog.description}
                     </p>
                     <p className="mb-0">
-                      Date: {blog.date}
+                      <span>Date:</span> {blog.date}
                     </p>
                     <div className="d-flex gap-2 mt-3">
 

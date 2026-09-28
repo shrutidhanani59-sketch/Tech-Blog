@@ -7,3 +7,14 @@ body{
     background: linear-gradient(135deg , #590d22 , #800f2f , #a4133c );
 }
 
+span{
+    color: #74132e;
+    font-weight: bold;
+}
+.cards{
+    cursor: pointer;
+    transition: 1s;
+}
+.cards:hover{
+    transform: scale(1.02);
+}
