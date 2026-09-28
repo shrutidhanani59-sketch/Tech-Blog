@@ -60,7 +60,7 @@ function App() {
     setImg(edit.img);
     setAuthor(edit.author);
     setDescription(edit.description);
-    setDate(edit.data);
+    setDate(edit.date);
     setid(edit.id);
   }
   return (
