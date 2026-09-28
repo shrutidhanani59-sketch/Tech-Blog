@@ -70,8 +70,11 @@ package.json
 
 vite.config.js
 
-## Imges
+## 🖼️ Imges
 
 ![Tech Blog](./Screenshot1.png)
 
 ![Tech Blog](./Screenshot2.png)
+
+## 📷 video
+https://drive.google.com/file/d/1xBVZC7LuK9FOHBe1SGc3ulK6aZa-c7qh/view?usp=sharing

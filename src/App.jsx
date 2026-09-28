@@ -14,6 +14,8 @@ function App() {
 
   const API = "http://localhost:3000/blog";
 
+  // Read
+
   fetch(API, {
     method: "Get",
     headers: { "content-type": "application/json" }
@@ -22,6 +24,7 @@ function App() {
       setBlog(data);
     })
   })
+// Creat
 
   const handleclick = (e) => {
 
@@ -35,6 +38,7 @@ function App() {
         },
         body: JSON.stringify(add)
       });
+      // Update
     }else{
        fetch(`${API}/${id}`, {
         method: "PUT",
@@ -47,6 +51,8 @@ function App() {
 
   }
 
+    // Delet
+    
   const deletbtn = (id) => {
     fetch(`${API}/${id}`, {
       method: "DELETE",
@@ -54,6 +60,7 @@ function App() {
     })
 
   }
+  // Update
 
   const updatebtn = (edit) => {
     setTitle(edit.title);
@@ -69,7 +76,7 @@ function App() {
 
         <form className="card shadow p-4 rounded-4" style={{ width: "450px" }}>
 
-          <h2 className="text-center fw-bold mb-4"> {(!id) ? "Add Tech Blog" : "Update Tech Blog"}   </h2>
+          <h2 className="text-center fw-bold mb-4"> {(!id) ? "Add Tech Blog" : "Update Tech Blog" }  </h2>
 
           <div className="mb-3">
             <label className="form-label fw-semibold">  Title </label>

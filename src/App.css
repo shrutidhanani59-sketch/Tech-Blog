@@ -13,11 +13,9 @@ span{
 }
 .cards{
     cursor: pointer;
-    transition: 1s;
+  
 }
-.cards:hover{
-    transform: scale(1.02);
-}
+
 .btn1{
     background-color: rgb(180, 1, 1);
     border: none;
