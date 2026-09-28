@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #013769 !important;
+    background: linear-gradient(135deg , #590d22 , #800f2f , #a4133c );
 }
-.card{
-    background-color: #eef6ff !important;
-}
+
