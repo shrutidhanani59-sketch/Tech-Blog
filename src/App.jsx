@@ -137,11 +137,11 @@ function App() {
                     </p>
                     <div className="d-flex gap-2 mt-3">
 
-                      <button className="btn btn-danger" onClick={() => deletbtn(blog.id)}>
+                      <button className="btn1" onClick={() => deletbtn(blog.id)}>
                         Delete
                       </button>
 
-                      <button className="btn btn-warning" onClick={() =>updatebtn(blog)}>
+                      <button className="btn2" onClick={() =>updatebtn(blog)}>
                         Update
                       </button>
 

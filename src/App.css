@@ -18,3 +18,25 @@ span{
 .cards:hover{
     transform: scale(1.02);
 }
+.btn1{
+    background-color: rgb(180, 1, 1);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: rgb(218, 1, 1);
+    
+}
+.btn2{
+    background-color: rgb(255, 60, 1);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: rgb(255, 74, 19);
+    
+}
